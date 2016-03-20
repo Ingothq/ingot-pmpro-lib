@@ -1,8 +1,8 @@
 <?php
 /**
- * Add EDD conversion destination tracking
+ * Add Paid Members Pro destination tracking
  *
- * @package   ingot-edd-lib
+ * @package   ingot-pmpro-lib
  * @author    Josh Pollock <Josh@JoshPress.net>
  * @license   GPL-2.0+
  * @link

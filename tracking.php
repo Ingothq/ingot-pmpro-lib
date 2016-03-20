@@ -1,8 +1,8 @@
 <?php
 /**
- * Track EDD conversion events
+ * Track Paid Members Pro destination tests
  *
- * @package   ingot-edd-lib
+ * @package   ingot-pmpro-lib
  * @author    Josh Pollock <Josh@JoshPress.net>
  * @license   GPL-2.0+
  * @link
@@ -23,7 +23,6 @@ class tracking {
 	 */
 	public function __construct(){
 		add_action( 'template_redirect', [ $this, 'track' ] );
-		add_action( 'edd_complete_purchase', [ $this, 'purchase' ] );
 	}
 
 	/**
@@ -61,7 +60,9 @@ class tracking {
 		}
 
 
-		hooks::get_instance([])->check_if_victory( $tracking );
+		if ( $tracking  ) {
+			hooks::get_instance( [ ] )->check_if_victory( $tracking );
+		}
 
 	}
 
