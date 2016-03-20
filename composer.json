@@ -1,0 +1,22 @@
+{
+  "name": "ingot/ingot-pmpro",
+  "description": "Add Paid Members Pro Support to Ingot",
+  "keywords": [
+    "wordpress", "ingot"
+  ],
+  "minimum-stability" : "dev",
+  "license": "GPL-2.0+",
+  "authors": [
+    {
+      "name": "Josh Pollock",
+      "homepage": "http://JoshPress.net",
+      "role": "Developer"
+    }
+  ],
+  "repositories" : [
+    {
+      "type" : "git",
+      "url" : "https://github.com/Ingothq/ingot-pmpro-lib"
+    }
+  ]
+}
