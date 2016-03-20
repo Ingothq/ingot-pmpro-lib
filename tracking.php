@@ -56,7 +56,7 @@ class tracking {
 		}
 **/
 		if(is_page($pmpro_pages['confirmation'])) {
-			$tracking = 'pmpro_joined';
+			$tracking = 'pmpro_confirmation';
 		}
 
 
