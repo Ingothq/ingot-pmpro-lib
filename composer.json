@@ -21,7 +21,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "ingot\\addon\\give\\": "src"
+      "ingot\\addon\\pmpro\\": "src"
     }
   }
 }
