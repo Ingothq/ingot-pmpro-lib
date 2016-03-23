@@ -28,11 +28,11 @@ class tracking {
 	/**
 	 * Track conversions when EDD product added to cart
 	 *
-	 * @since 1.1.0
+	 * @since 1.0.0
 	 *
-	 * @uses "edd_post_add_to_cart"
+	 * @uses "template_redirect"
 	 */
-	public function template_redirect(){
+	public function track(){
 
 		global $pmpro_pages, $pmpro_level;
 
@@ -56,12 +56,12 @@ class tracking {
 		}
 **/
 		if(is_page($pmpro_pages['confirmation'])) {
-			$tracking = 'pmpro_confirmation';
+			$track = 'pmpro_confirmation';
 		}
 
 
-		if ( $tracking  ) {
-			hooks::get_instance( [ ] )->check_if_victory( $tracking );
+		if ( $track  ) {
+			hooks::get_instance( [ ] )->check_if_victory( $track );
 		}
 
 	}
